@@ -2,7 +2,7 @@
 
 در ترجمه این داکیومنت، تلاش شده تا محتوا برای برنامه‌نویس‌های مبتدی بهینه بشه و در عین حال محتوا به درستی در دسترس قرار بگیره. پاراگراف‌هایی که با ** شروع شدن مواردی هستن که برای درک بهتر مطالب اضافه شدن و جزئی از داکیومنت اصلی نیستن.
 
-اگر درک مطلبی براتون و پیشنهادی برای بهتر شدنش دارید، بسیار ممنون میشم باهام تماس بگیرید:
+اگر درک مطلبی براتون سخته و پیشنهادی برای بهتر شدنش دارید، ممنون میشم باهام درمیون بذارید:
 
 Telegram: [moein_mirkiani](https://t.me/moein_mirkiani)
 
@@ -28,7 +28,7 @@ Email: moein.mirkiani@gmail.com
 ![Humorous image of software quality estimation as a count of how many expletives
 you shout when reading code](https://www.osnews.com/images/comics/wtfm.jpg)
 
-اصول مهندسی نرم افزار، از کتاب Clean Code رابرت سی. مارتین، اقتباس شده برای جاوا اسکریپت. این اصول، یک سبک برنامه‌نویسی نیستن، بلکه راهنمای نوشتن نرم‌افزارهایی هستن که خوانایی دارن (readable)، قابلیت استفاده مجدد دارن (reusable) و قابلیت تغییر ساختار کد رو دارن بدون اینکه عملکردشون تغییر کنه (refactorable).
+اصول مهندسی نرم افزار، از کتاب [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) رابرت سی. مارتین، اقتباس شده برای جاوا اسکریپت. این اصول، یک سبک برنامه‌نویسی نیستن، بلکه راهنمای نوشتن نرم‌افزارهایی هستن که خوانایی دارن ([readable](https://github.com/ryanmcdermott/3rs-of-software-architecture))، قابلیت استفاده مجدد دارن ([reusable](https://github.com/ryanmcdermott/3rs-of-software-architecture)) و قابلیت تغییر ساختار کد رو دارن بدون اینکه عملکردشون تغییر کنه  ([refactorable](https://github.com/ryanmcdermott/3rs-of-software-architecture)).
 
 لزومی نداره همه این اصول به طور دقیق رعایت بشن، حتی تعداد کمی از اون‌ها مورد توافق جهانی قرار می‌گیرن. این اصول صرفا تعدادی دستورالعمل هستند و نه بیشتر، اما این دستورالعمل‌ها طی سال‌ها تجربه جمعی، توسط نویسندگان Clean Code تدوین شدن.
 
@@ -52,7 +52,7 @@ const yyyymmdstr = moment().format("YYYY/MM/DD");
 const currentDate = moment().format("YYYY/MM/DD");
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از واژ‌ه‌های یکسان برای یک نوع متغیر استفاده کنید
 
@@ -70,7 +70,7 @@ getCustomerRecord();
 getUser();
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از اسم‌های قابل جستجو استفاده کنید
 
@@ -93,7 +93,7 @@ const MILLISECONDS_PER_DAY = 60 * 60 * 24 * 1000; //86400000;
 setTimeout(blastOff, MILLISECONDS_PER_DAY);
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از متغیرهای توضیحی استفاده کنید
 
@@ -117,11 +117,11 @@ const [_, city, zipCode] = address.match(cityZipCodeRegex) || [];
 saveCityZipCode(city, zipCode);
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از نامگذاری‌های ذهنی پرهیز کنید
 
-اینکه صراحتا از یه واژه برای نامگذاری استفاده کنید، بهتر از اینکه اشاره ضمنی به اون واژه داشته باشید. در مثال زیر برای لوکیشن بهتره از خود واژه location استفاده کنیم و استفاده از تک حرف l توصیه نمیشه.
+اینکه صراحتا از یه واژه برای نامگذاری استفاده کنید، بهتر از اینکه اشاره ضمنی به اون واژه داشته باشید. در مثال زیر برای لوکیشن بهتره از خود واژه `location` استفاده کنیم و استفاده از تک حرف `l` توصیه نمیشه.
 
 **بد:**
 
@@ -152,7 +152,7 @@ locations.forEach(location => {
 });
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### محتوای غیر ضروری اضافه نکنید
 
@@ -186,7 +186,7 @@ function paintCar(car, color) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### به جای استفاده از عبارت‌های شرطی و میانبر، از پارامترهای پیشفرض استفاده کنید
 
@@ -209,7 +209,7 @@ function createMicrobrewery(name = "Hipster Brew Co.") {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **تابع‌ها**
 
@@ -233,7 +233,7 @@ function createMicrobrewery(name = "Hipster Brew Co.") {
 
 ```javascript
 function calculateArea({ width, height }) {
-  		return width * height;
+  return width * height;
 }
 
 calculateArea({ width: 3, height: 4 });
@@ -243,7 +243,7 @@ calculateArea({ width: 3, height: 4 });
 
 ```javascript
 function calculateArea(width, height) {
-   		return width * height
+  return width * height
 }
 
 calculateArea(10 , 25);
@@ -282,7 +282,7 @@ createMenu({
 });
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### هر تابع فقط باید یک کار انجام بده
 
@@ -314,7 +314,7 @@ function isActiveClient(client) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### اسم تابع باید به کاری که اون تابع انجام میده اشاره کنه
 
@@ -342,7 +342,7 @@ const date = new Date();
 addMonthToDate(1, date);
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### هر تابع فقط باید یک برداشت (abstraction) روی ورودی خودش انجام بده
 
@@ -414,7 +414,7 @@ function parse(tokens) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### کدهای تکراری رو حذف کنید
 
@@ -488,7 +488,7 @@ function showEmployeeList(employees) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### آبجکت‌های پیشفرض رو با استفاده از Object.assign مقداردهی کنید
 
@@ -541,7 +541,7 @@ function createMenu(config) {
 createMenu(menuConfig);
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از flag به عنوان پارامتر تابع استفاده نکنید
 
@@ -573,7 +573,7 @@ function createTempFile(name) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از اثرات جانبی پرهیز کنید (بخش اول)
 
@@ -613,7 +613,7 @@ console.log(name); // 'Ryan McDermott';
 console.log(newName); // ['Ryan', 'McDermott'];
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از اثرات جانبی پرهیز کنید (بخش دوم)
 
@@ -647,7 +647,7 @@ const addItemToCart = (cart, item) => {
 };
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### روی تابع‌های سراسری (global) تغییری ایجاد نکنید
 
@@ -673,7 +673,7 @@ class SuperArray extends Array {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### برنامه‌نویسی تابعی (functional programming) رو به برنامه‌نویسی دستوری (imperative programming) ترجیح بدید
 
@@ -737,7 +737,7 @@ const totalOutput = programmerOutput.reduce(
 );
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### عبارات شرطی رو کپسوله کنید
 
@@ -763,7 +763,7 @@ if (shouldShowSpinner(fsmInstance, listNodeInstance)) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از شرط‌های منفی پرهیز کنید
 
@@ -791,7 +791,7 @@ if (isDOMNodePresent(node)) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از شرط‌ها پرهیز کنید
 
@@ -844,7 +844,7 @@ class Cessna extends Airplane {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از بررسی نوع متغیر یا پارامتر پرهیز کنید (بخش اول)
 
@@ -871,7 +871,7 @@ function travelToTexas(vehicle) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از بررسی نوع متغیر یا پارامتر پرهیز کنید (بخش دوم)
 
@@ -900,7 +900,7 @@ function combine(val1, val2) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### بیش از حد بهینه سازی نکنید
 
@@ -924,7 +924,7 @@ for (let i = 0; i < list.length; i++) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### کدهای بلا استفاده رو پاک کنید
 
@@ -956,7 +956,7 @@ const req = newRequestModule;
 inventoryTracker("apples", req, "www.inventory-awesome.io");
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **آبجکت‌ها و ساختارهای داده**
 
@@ -1014,7 +1014,7 @@ const account = makeBankAccount();
 account.setBalance(100);
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### آبجکت‌های با ویژگی‌های خصوصی بسازید
 
@@ -1055,7 +1055,7 @@ delete employee.name;
 console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **کلاس‌ها**
 
@@ -1139,7 +1139,7 @@ class Human extends Mammal {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از زنجیره‌ای کردن متدها استفاده کنید (method chaining)
 
@@ -1216,7 +1216,7 @@ class Car {
 const car = new Car("Ford", "F-150", "red").setColor("pink").save();
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### ترکیب کلاس‌ها (composition) رو به وراثت (inheritance) ترجیح بدید
 
@@ -1282,7 +1282,7 @@ class Employee {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **اصول SOLID**
 
@@ -1339,7 +1339,7 @@ class UserSettings {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### اصل باز/بسته
 
@@ -1427,7 +1427,7 @@ class HttpRequester {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### اصل جایگزینی لیسکوف
 
@@ -1537,7 +1537,7 @@ const shapes = [new Rectangle(4, 5), new Rectangle(4, 5), new Square(5)];
 renderLargeShapes(shapes);
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### اصل جداسازی رابط
 
@@ -1607,7 +1607,7 @@ const $ = new DOMTraverser({
 });
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### اصل وارونگی وابستگی
 
@@ -1699,7 +1699,7 @@ const inventoryTracker = new InventoryTracker(
 inventoryTracker.requestItems();
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **تست**
 
@@ -1763,7 +1763,7 @@ describe("MomentJS", () => {
 });
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **همزمانی**
 
@@ -1815,7 +1815,7 @@ get("https://en.wikipedia.org/wiki/Robert_Cecil_Martin")
   });
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### استفاده از Async/Await حتی از Promises هم تمیزتره
 
@@ -1860,7 +1860,7 @@ async function getCleanCodeArticle() {
 getCleanCodeArticle()
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **مدیریت خطا**
 
@@ -1930,7 +1930,7 @@ getdata()
   });
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **قالب بندی**
 
@@ -1974,7 +1974,7 @@ class Animal {}
 class Alpaca {}
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### تابع‌هایی که همدیگه رو فراخوانی میکنن، نزدیک هم بنویسید
 
@@ -2060,7 +2060,7 @@ const review = new PerformanceReview(employee);
 review.perfReview();
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## **توضیحات**
 
@@ -2107,7 +2107,7 @@ function hashIt(data) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### کدهای comment شده رو پاک کنید
 
@@ -2128,7 +2128,7 @@ doStuff();
 doStuff();
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### توضیحات روزنامه وار ننویسید
 
@@ -2156,7 +2156,7 @@ function combine(a, b) {
 }
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ### از نوشتن نشانگرهای تعیین موقعیت پرهیز کنید
 
@@ -2194,7 +2194,7 @@ const actions = function() {
 };
 ```
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
 
 ## ترجمه
 
@@ -2224,4 +2224,4 @@ const actions = function() {
 - ![ua](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png) **Ukrainian**: [mindfr1k/clean-code-javascript-ua](https://github.com/mindfr1k/clean-code-javascript-ua)
 - ![vi](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [hienvd/clean-code-javascript/](https://github.com/hienvd/clean-code-javascript/)
 
-**[⬆ بازگشت](#table-of-contents)**
+**[⬆ بازگشت](#فهرست-محتوا)**
