@@ -4,7 +4,7 @@
 
 اگر درک مطلبی براتون سخته و پیشنهادی برای بهتر شدنش دارید، ممنون میشم باهام درمیون بذارید:
 
-Telegram: [moein_mirkiani](https://t.me/moein_mirkiani)
+LinkedIn: [moeinmirkiani](https://www.linkedin.com/in/moeinmirkiani)
 
 Email: moein.mirkiani@gmail.com
 
